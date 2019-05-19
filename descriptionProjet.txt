@@ -1,0 +1,23 @@
+---------------------------------- description du projet NOTLAR---------------------------------------
+
+application pour  faire des notes de courses a faire ou de trucs a se rappeler  avec des rappels a organiser , on peut cocher ce quon a fait ou acheter et mettre en rappel ce quon choisi qui na pas ete fait 
+
+-------------------------------------------------------
+BDD 
+------------------------------------------
+
+table utilisateur(id_user(PK) INT,name STRING,email STRING);
+table user_note(id_user,id_note); PK( id_user, id_note)
+table notes(id_note(PK) INT,description STRING,validation boolean);
+table note_rappel(id_note, id_rappel); PK (id_note,id_rappel)
+table rappel(id_rappel(PK) INT, date_rappel DATE);
+
+
+------------------------------------------------
+FAIT: ---
+Ceation BD Ok
+Creation classe User / Users(Liste utilisateur) Ok
+creer une classe pour faire la connexion avec la base de donnée 
+----------------------------------------
+MANQUE: ---
+creer des methode pour faire les echange d'info avc la bdd
